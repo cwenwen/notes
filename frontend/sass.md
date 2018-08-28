@@ -5,9 +5,10 @@
 * [PostCSS](https://postcss.org/)
 * [PostCSS 介紹](http://huli.logdown.com/posts/262723-experiences-what-is-postcss)
 
-***
+  
 
-### Install
+
+## Install
 
 用 npm 安裝：
 
@@ -24,7 +25,7 @@ npm install -g sass
 sudo npm update -g
 ```
 
-### Preprocessing
+## Preprocessing
 
 手動把 `input.scss` 轉換成 `output.css`：
 
@@ -41,7 +42,7 @@ sass --watch input.scss output.css
 
 同上，  
 若 `input.scss` 和 `output.css` 在不同資料夾，  
-可用 `:` 區別不同資料夾：
+可用 `:` 區別不同資料夾：
 
 ```
 sass --watch app/sass:public/stylesheets
@@ -49,13 +50,13 @@ sass --watch app/sass:public/stylesheets
 Sass 會監視 `app/sass` 資料夾內所有改變，  
 轉換到 `public/stylesheets` 資料夾。
 
-### Variables: $
+## Variables: $
 
 SCSS 的語法長得比較像 CSS，使用 `;` 和 `{}`，  
 Sass 則省略這兩個，比較沒標點符號，語法也有些許不同。  
 以下皆為 SCSS 語法。
 
-宣告和呼叫變數使用 `$` 符號，如：
+宣告和呼叫變數使用 `$` 符號，如：
 
 ```scss
 $font-stack:    Helvetica, sans-serif;
@@ -67,7 +68,7 @@ body {
 }
 ```
 
-### Nesting
+## Nesting
 
 撰寫 Sass 可以像 HTML 一樣擁有清楚的巢狀結構，  
 但勿過度使用，以免難維護。  
@@ -75,7 +76,7 @@ body {
 
 ```scss
 nav {
-  display: none;
+  display: none;
 
   ul {
     margin: 0;
@@ -95,9 +96,9 @@ nav {
 }
 ```
 
-### Referencing Parent Selectors: &
+## Referencing Parent Selectors: &
 
-在巢狀結構底下，可以用 `&` 來取代上一層 parent 的元素，  
+在巢狀結構底下，可以用 `&` 來取代上一層 parent 的元素，  
 例如在 `a` 標籤底下提到 `a:hover` ，  
 可寫成 `&:hover`。
 
@@ -128,9 +129,9 @@ class 名稱很長時，  `&` 也很好用，
 }
 ```
 
-### Partials/Import
+## Partials/Import
 
-用底線為開頭命名的 SCSS 檔案如 `_partial.scss` ，  
+用底線為開頭命名的 SCSS 檔案如 `_partial.scss` ，  
 不會被轉換成 CSS 檔案，  
   
 它們是片段的程式碼，可用 `@import` 引入其他 SCSS 檔案中，  
@@ -163,10 +164,10 @@ body {
 }
 ```
 
-### Mixins (they're like functions)
+## Mixins (they're like functions)
 
 有些想重複利用的程式碼可用 `@mixin` 做成像是 function 的元件，  
-使用時帶入想運算的值，用 `@include` 引入：
+使用時帶入想運算的值，用 `@include` 引入：
 
 ```scss
 @mixin border-radius($radius) {
@@ -192,10 +193,10 @@ body {
 }
 ```
 
-### Extend/Inheritance
+## Extend/Inheritance
 
 若沒有值需要帶入，不需要 function，但想重複使用同一組 properties，  
-可使用 `%` 定義該 properties，需要時用 `@extend` 引入：
+可使用 `%` 定義該 properties，需要時用 `@extend` 引入：
 
 ```scss
 // This CSS won't print because %equal-heights is never extended.
@@ -255,7 +256,7 @@ body {
 }
 ```
 
-### Comments: /* */ and //
+## Comments: /* */ and //
 
 使用 `/* */` 會出現在 CSS 檔案上，而 `//` 不會。
 
