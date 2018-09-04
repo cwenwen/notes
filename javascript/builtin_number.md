@@ -2,22 +2,22 @@
 
 [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) and [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 
-* 字串轉換成數字
+* 字串轉換成數字
 ```js
 Number(value)
 ```
 
-* 字串轉換成整數
+* 字串轉換成整數
 ```js
 parseInt(string, radix);
 ```
 
-* 字串轉換成小數
+* 字串轉換成小數
 ```js
 parseFloat(value)
 ```
 
-* 數字轉換成字串
+* 數字轉換成字串
 ```js
 numObj.toString([radix])
 numObj + ''
