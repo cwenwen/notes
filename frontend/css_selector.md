@@ -61,7 +61,7 @@ Selects all `B` inside of `A`.
 ## Comma Combinator
 
 Combine, selectors, with... commas!  
-A 和 B
+A 和 B
 ```css
 A, B
 ```
@@ -329,7 +329,7 @@ Combine the attribute selector with another selector (like the tag name selector
 
 Select all elements that have a specific attribute value  
 選特性是 “某特定 value” 的
-```css
+```
 [attribute="value”]
 ```
 Attribute selectors are case sensitive, each character must match exactly.  
@@ -342,7 +342,7 @@ Attribute selectors are case sensitive, each character must match exactly.
 
 Select all elements with an attribute value that starts with specific characters  
 選特性是 “某 value” 開頭的
-```css
+```
 [attribute^="value”]
 ```
 **Examples**
@@ -353,7 +353,7 @@ Select all elements with an attribute value that starts with specific characters
 
 Select all elements with an attribute value that ends with specific characters  
 選特性是”某 value” 結尾的
-```css
+```
 [attribute$="value"]
 ```
 **Examples**
@@ -364,7 +364,7 @@ Select all elements with an attribute value that ends with specific characters
 
 Select all elements with an attribute value that contains specific characters anywhere  
 選特性中包含 ”某 value” 元素的
-```css
+```
 [attribute*="value”]
 ```
 A useful selector if you can identify a common pattern in things like `class`, `href` or `src` attributes.  
