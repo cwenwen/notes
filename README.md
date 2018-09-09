@@ -10,4 +10,5 @@ My notes on web development (in Mandarin)
 * [Array](https://github.com/cwenwen/Notes/blob/master/javascript/builtin_array.md)
 
 ## Front-end
+* [CSS Selectors](https://github.com/cwenwen/Notes/blob/master/frontend/css_selector.md)
 * [Sass Basics](https://github.com/cwenwen/Notes/blob/master/frontend/sass.md)
