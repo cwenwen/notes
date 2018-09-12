@@ -11,6 +11,7 @@ My notes on web development (in Mandarin)
 
 ### JS30
 * Day 1 - [JavaScript Drum Kit](https://github.com/cwenwen/Notes/blob/master/javascript/js30/js30_1.md)
+* Day 2 - [JS + CSS Clock](https://github.com/cwenwen/Notes/blob/master/javascript/js30/js30_2.md)
 
 ## Front-end
 * [CSS Selectors](https://github.com/cwenwen/Notes/blob/master/frontend/css_selector.md)
