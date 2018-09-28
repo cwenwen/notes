@@ -22,10 +22,11 @@ For [Mentor Program](https://github.com/Lidemy/mentor-program-2nd-cwenwen)
 * Day 2 - [JS + CSS Clock](https://github.com/cwenwen/Notes/blob/master/javascript/js30/js30_2.md)
 * Day 3 - [Update CSS Variables with JS](https://github.com/cwenwen/Notes/blob/master/javascript/js30/js30_3.md)
 
+## Front End
+
+* [CSS Selectors](https://github.com/cwenwen/Notes/blob/master/frontend/css_selector.md)
+* [Sass Basics](https://github.com/cwenwen/Notes/blob/master/frontend/sass.md)
+
 ### React
 * [React Crash Course 2018](https://github.com/cwenwen/Notes/blob/master/javascript/react/react_crash_course_2018.md)
 * [Tutorial: Intro to React](https://github.com/cwenwen/Notes/blob/master/javascript/react/tutorial_intro_to_react.md)
-
-## Front End
-* [CSS Selectors](https://github.com/cwenwen/Notes/blob/master/frontend/css_selector.md)
-* [Sass Basics](https://github.com/cwenwen/Notes/blob/master/frontend/sass.md)
