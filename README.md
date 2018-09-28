@@ -8,6 +8,7 @@ For [Mentor Program](https://github.com/Lidemy/mentor-program-2nd-cwenwen)
 
 * [Programming Foundation](https://github.com/cwenwen/Notes/blob/master/short_answer/foundation.md)
 * [Front End Basics](https://github.com/cwenwen/Notes/blob/master/short_answer/frontend_basics.md)
+* [React](https://github.com/cwenwen/Notes/blob/master/short_answer/react.md)
 
 ## JavaScript
 
