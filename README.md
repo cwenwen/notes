@@ -28,5 +28,5 @@ For [Mentor Program](https://github.com/Lidemy/mentor-program-2nd-cwenwen)
 * [Sass Basics](https://github.com/cwenwen/Notes/blob/master/frontend/sass.md)
 
 ### React
-* [React Crash Course 2018](https://github.com/cwenwen/Notes/blob/master/javascript/react/react_crash_course_2018.md)
-* [Tutorial: Intro to React](https://github.com/cwenwen/Notes/blob/master/javascript/react/tutorial_intro_to_react.md)
+* [React Crash Course 2018](https://github.com/cwenwen/Notes/blob/master/frontend/react/react_crash_course_2018.md)
+* [Tutorial: Intro to React](https://github.com/cwenwen/Notes/blob/master/frontend/react/tutorial_intro_to_react.md)
