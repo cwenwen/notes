@@ -2,7 +2,6 @@
 
 ## What are pros and cons of CSS sprites and data URI?
 
-**CSS Sprites**  
 | | CSS Sprites | Data URI |
 | --- | --- | --- |
 | Description | A collection of images put into a single image | A method for embedding images directly in the HTML or CSS code using base64 encoding |
