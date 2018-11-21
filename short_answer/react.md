@@ -1,16 +1,18 @@
-## Why we need React? Do we have to use it?
+# React Basics
+
+## Why de we need React? Do we have to use it?
 
 Of course that we don't *have* to use React, but React makes it easier to create interactive UIs. We design simple views for each state in our application, and React will efficiently update and render just the right components when our data changes. Declarative views make the code more predictable and easier to debug. Also, React provides these benefits:
 
-* JSX
+#### JSX
 
 JSX allows us to write HTML-like code right into their JavaScript. React takes care of the heavy lifting by transforming the JSX into React compatible code. Most developers are familiar with HTML syntax and it allows us to picture the structure of the component or page we are building more easily.
 
-* Reusable Components
+#### Reusable Components
 
 React provides a component based structure. Each component decides how it should be rendered. Each component has its own internal logic. We can re-use components. As a result, (1) our app has consistent look and feel, (2) code re-use makes it easier to maintain and grow our codebase, and (3) it is easier to develop an app.
 
-* Fast render with Virtual DOM
+#### Fast render with Virtual DOM
 
 We won't have to deal with the DOM directly at all. React will handle all that for us (and likely do a better/faster job than we would have.)
 
