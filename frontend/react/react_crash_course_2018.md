@@ -38,7 +38,7 @@ export default [輸入 component];
 export default Counter;
 ```
 
-JSX 中，要寫 JavaScript 語法，要加上 {}。  
+JSX 中，要寫 JavaScript 語法，要加上 `{}`。  
 JSX 中，`<React.Fragment>` 可以取代 `<div>` 來當一個父元素，而不會被 render 出來。  
 （因為 React 只能 render 單一的元素。）
 
@@ -53,7 +53,9 @@ styles = {
 };
 ```
 
-在 JSX 的標籤中直接寫 CSS，記得要兩個 {}。像這樣：
+在 JSX 的標籤中直接寫 CSS，記得要兩個 `{}`，  
+裡面那個 `{}` 代表 JavaScript object。  
+像這樣：
 
 ```jsx
 style={{ fontSize: 30 }}
