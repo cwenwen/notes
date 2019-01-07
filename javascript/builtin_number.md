@@ -1,4 +1,4 @@
-# Javascript Built-in Methods
+# Built-in Number Methods
 
 [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) and [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 

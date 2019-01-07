@@ -1,6 +1,6 @@
-# Javascript Built-in Methods
+# Built-in String Methods
 
-[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 * 大小寫轉換
 ```js

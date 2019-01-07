@@ -1,4 +1,4 @@
-# Javascript Built-in Methods
+# Built-in Array Methods
 
 [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
