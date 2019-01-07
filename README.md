@@ -22,6 +22,8 @@ For [Mentor Program](https://github.com/Lidemy/mentor-program-2nd-cwenwen)
 
 ## JavaScript
 
+* [The `this` keyword](https://github.com/cwenwen/Notes/blob/master/javascript/this.md)
+
 ### Built-in Methods
 
 * [Number and Math](https://github.com/cwenwen/Notes/blob/master/javascript/builtin_number.md)
