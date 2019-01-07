@@ -27,6 +27,7 @@ For [Mentor Program](https://github.com/Lidemy/mentor-program-2nd-cwenwen)
 * [Number and Math](https://github.com/cwenwen/Notes/blob/master/javascript/builtin_number.md)
 * [String](https://github.com/cwenwen/Notes/blob/master/javascript/builtin_string.md)
 * [Array](https://github.com/cwenwen/Notes/blob/master/javascript/builtin_array.md)
+* [Object](https://github.com/cwenwen/Notes/blob/master/javascript/builtin_object.md)
 
 ### JS30
 
