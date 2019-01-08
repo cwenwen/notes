@@ -34,7 +34,7 @@ const example = {
 }
 ```
 
-### 如果這個 function 在 object 之中（object 的 method：`this` 指的是 object 本身。  
+### 如果這個 function 在 object 之中（object 的 method）：`this` 指的是 object 本身。  
 
 ```js
 const goat = {
