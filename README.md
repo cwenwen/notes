@@ -23,6 +23,7 @@ For [Mentor Program](https://github.com/Lidemy/mentor-program-2nd-cwenwen)
 ## JavaScript
 
 * [The `this` keyword](https://github.com/cwenwen/Notes/blob/master/javascript/this.md)
+* [Promises by Codecademy](https://github.com/cwenwen/Notes/blob/master/javascript/promise_codecademy.md)
 
 ### Built-in Methods
 
