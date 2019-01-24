@@ -47,3 +47,7 @@ For [Mentor Program](https://github.com/Lidemy/mentor-program-2nd-cwenwen)
 
 * [React Crash Course 2018](https://github.com/cwenwen/Notes/blob/master/frontend/react/react_crash_course_2018.md)
 * [Tutorial: Intro to React](https://github.com/cwenwen/Notes/blob/master/frontend/react/tutorial_intro_to_react.md)
+
+## GraphQL
+
+* [Core Concepts](https://github.com/cwenwen/Notes/blob/master/graphql/graphql_core.md)
