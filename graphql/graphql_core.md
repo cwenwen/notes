@@ -146,3 +146,167 @@ Response 會長這樣：
 
 ### Queries with Arguments
 
+
+每個欄位可以有零個或多個 arguments，例如 `last` 這個 argument 可指定特定的回傳數量：
+
+```graphql
+{
+  allPersons(last: 2) {
+    name
+  }
+}
+```
+
+Response：
+
+```json
+{
+  "data": {
+    "allPersons": [
+      {
+        "name": "Sarah"
+      },
+      {
+        "name": "Alice"
+      }
+    ]
+  }
+}
+```
+
+## Writing Data with Mutations
+
+使用 mutations 來做這三種改變：
+
+- 新增
+- 更新
+- 刪除
+
+語法結構都和 queries 一樣，但開頭需要 `mutation` 這個關鍵字：
+
+```graphql
+mutation {
+  createPerson(name: "Bob", age: 36) {
+    name
+    age
+  }
+}
+```
+
+這個 mutation 的 root field 是 `createPerson`。  
+The server response 長這樣：
+
+```json
+"createPerson": {
+  "name": "Bob",
+  "age": 36,
+}
+```
+
+資料變這樣：
+
+| id | name | age |
+| -- | -- | -- |
+| cjr8yibv90knp0195n8d5frox | Johnny | 23 |
+| cjr8yibwa0knv0195oy964jxq | Sarah | 20 |
+| cjr8yibwx0knz01951eon2m2x | Alice | 20 |
+| cjra0ucji19r801974cgd0ntb | Bob | 36 |
+
+如果再這樣寫：
+
+```graphql
+mutation {
+  createPerson(name: "Alice", age: 36) {
+    id
+  }
+}
+```
+
+The server response 長這樣：
+
+```json
+{
+  "data": {
+    "createPerson": {
+      "id": "cjra12gf700cg0185h6p53bg4"
+    }
+  }
+}
+```
+
+資料變這樣：
+
+| id | name | age |
+| -- | -- | -- |
+| cjr8yibv90knp0195n8d5frox | Johnny | 23 |
+| cjr8yibwa0knv0195oy964jxq | Sarah | 20 |
+| cjr8yibwx0knz01951eon2m2x | Alice | 20 |
+| cjra0ucji19r801974cgd0ntb | Bob | 36 |
+| cjra12gf700cg0185h6p53bg4 | Alice | 36 |
+
+## Realtime Updates with Subscriptions
+
+使用 subscription 和 server 聯繫，取得即時的資料。
+
+Subscriptions 不像 queries 和 mutations 遵循典型的 *“request-response-cycle”*，它的資料是 *stream* 的概念。
+
+假設我們要 subscribe 所有 `Person` type 的 events：
+
+```grapgql
+subscription {
+  newPerson {
+    name
+    age
+  }
+}
+```
+
+Subscribe 後，如果有 mutation 建立了新的 `Person`，server 就會回傳資訊給 client：
+
+```json
+{
+  "newPerson": {
+    "name": "Jane",
+    "age": 23
+  }
+}
+```
+
+## Defining a Schema
+
+The *schema* 是 GraphQL API 最重要的概念之一，可視為 server 和 client 之間的 contract，定義所有可能用到的 fields 和 arguments。  
+
+Schema 的 *root* types:
+
+```graphql
+type Query { ... }
+type Mutation { ... }
+type Subscription { ... }
+```
+
+以上範例用的所有 schema：
+
+```graphql
+type Query {
+  allPersons(last: Int): [Person!]!
+}
+
+type Mutation {
+  createPerson(name: String!, age: Int!): Person!
+}
+
+type Subscription {
+  newPerson: Person!
+}
+
+type Person {
+  name: String!
+  age: Int!
+  posts: [Post!]!
+}
+
+type Post {
+  title: String!
+  author: Person!
+}
+```
